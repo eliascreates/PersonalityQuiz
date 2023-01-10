@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		51697E39296DDE2D003ADBCC /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51697E38296DDE2D003ADBCC /* QuestionViewController.swift */; };
+		51697E3B296DDE3D003ADBCC /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51697E3A296DDE3D003ADBCC /* ResultsViewController.swift */; };
 		51F7F560296CA68500164626 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F7F55F296CA68500164626 /* AppDelegate.swift */; };
 		51F7F562296CA68500164626 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F7F561296CA68500164626 /* SceneDelegate.swift */; };
 		51F7F564296CA68500164626 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F7F563296CA68500164626 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		51697E38296DDE2D003ADBCC /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		51697E3A296DDE3D003ADBCC /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		51F7F55C296CA68500164626 /* PersonalityQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalityQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51F7F55F296CA68500164626 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51F7F561296CA68500164626 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +64,8 @@
 				51F7F561296CA68500164626 /* SceneDelegate.swift */,
 				51F7F563296CA68500164626 /* ViewController.swift */,
 				51F7F565296CA68500164626 /* Main.storyboard */,
+				51697E3A296DDE3D003ADBCC /* ResultsViewController.swift */,
+				51697E38296DDE2D003ADBCC /* QuestionViewController.swift */,
 				51F7F568296CA68500164626 /* Assets.xcassets */,
 				51F7F56A296CA68500164626 /* LaunchScreen.storyboard */,
 				51F7F56D296CA68500164626 /* Info.plist */,
@@ -140,6 +146,8 @@
 			files = (
 				51F7F564296CA68500164626 /* ViewController.swift in Sources */,
 				51F7F560296CA68500164626 /* AppDelegate.swift in Sources */,
+				51697E39296DDE2D003ADBCC /* QuestionViewController.swift in Sources */,
+				51697E3B296DDE3D003ADBCC /* ResultsViewController.swift in Sources */,
 				51F7F562296CA68500164626 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
