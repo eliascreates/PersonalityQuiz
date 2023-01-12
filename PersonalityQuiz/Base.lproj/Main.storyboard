@@ -214,8 +214,8 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pTI-Sz-hcg">
-                                <rect key="frame" x="20" y="76" width="353" height="38.333333333333343"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pTI-Sz-hcg">
+                                <rect key="frame" x="20" y="75" width="353" height="38.333333333333343"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -246,8 +246,20 @@
                     </view>
                     <navigationItem key="navigationItem" id="HHF-8q-gP5"/>
                     <connections>
+                        <outlet property="multiLabel1" destination="gvq-1w-1eN" id="qfH-Dc-7YO"/>
+                        <outlet property="multiLabel2" destination="5gN-Ms-f56" id="xHh-jG-Smp"/>
+                        <outlet property="multiLabel3" destination="6vb-ah-UAF" id="ZWv-eh-ZIQ"/>
+                        <outlet property="multiLabel4" destination="C8f-1o-vbg" id="ucB-ir-yLE"/>
                         <outlet property="multipleStackView" destination="sIx-sy-IrR" id="PBQ-Ch-vDQ"/>
+                        <outlet property="questionLabel" destination="pTI-Sz-hcg" id="fBL-Fs-LF6"/>
+                        <outlet property="questionProgressView" destination="bR1-YN-Z9u" id="Rh7-xF-H8B"/>
+                        <outlet property="rangedLabel1" destination="o7n-Tz-dot" id="pRF-JG-Ubx"/>
+                        <outlet property="rangedLabel2" destination="hXy-Uz-Yzy" id="MeR-Ye-kzG"/>
                         <outlet property="rangedStackView" destination="tjV-6Q-3Nq" id="mrt-ws-mwP"/>
+                        <outlet property="singleButton1" destination="1ws-kI-mr5" id="2Yo-OA-FQw"/>
+                        <outlet property="singleButton2" destination="Jtp-kq-kDa" id="col-8i-CBT"/>
+                        <outlet property="singleButton3" destination="Jet-QC-glL" id="tXs-sA-Gx3"/>
+                        <outlet property="singleButton4" destination="udl-Qh-faK" id="I1h-iD-Q6G"/>
                         <outlet property="singleStackView" destination="YDr-4c-89b" id="Mqk-eX-7v0"/>
                         <segue destination="4Kl-Au-LAZ" kind="show" id="6Ac-1p-JvS"/>
                     </connections>
