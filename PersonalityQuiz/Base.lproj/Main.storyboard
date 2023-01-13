@@ -100,21 +100,33 @@
                                         <rect key="frame" x="0.0" y="0.0" width="353" height="34.333333333333336"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="jdb-RI-ejf" eventType="touchUpInside" id="AjD-X8-wii"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jtp-kq-kDa">
                                         <rect key="frame" x="0.0" y="54.333333333333314" width="353" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="jdb-RI-ejf" eventType="touchUpInside" id="oqn-As-nQj"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jet-QC-glL">
                                         <rect key="frame" x="0.0" y="108.66666666666669" width="353" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="jdb-RI-ejf" eventType="touchUpInside" id="7LV-Sc-nOk"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="udl-Qh-faK">
                                         <rect key="frame" x="0.0" y="163" width="353" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="jdb-RI-ejf" eventType="touchUpInside" id="bvH-e1-7ai"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -181,6 +193,9 @@
                                         <rect key="frame" x="0.0" y="204" width="353" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Submit Answer"/>
+                                        <connections>
+                                            <action selector="multiAnswerButtonPressed" destination="jdb-RI-ejf" eventType="touchUpInside" id="kIS-G1-ZAr"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -211,6 +226,9 @@
                                         <rect key="frame" x="0.0" y="90.333333333333371" width="353" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Submit Answer"/>
+                                        <connections>
+                                            <action selector="rangedAnswerButtonPressed" destination="jdb-RI-ejf" eventType="touchUpInside" id="Qss-r3-7qN"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -250,11 +268,16 @@
                         <outlet property="multiLabel2" destination="5gN-Ms-f56" id="xHh-jG-Smp"/>
                         <outlet property="multiLabel3" destination="6vb-ah-UAF" id="ZWv-eh-ZIQ"/>
                         <outlet property="multiLabel4" destination="C8f-1o-vbg" id="ucB-ir-yLE"/>
+                        <outlet property="multiSwitch1" destination="mOR-ee-kB5" id="Ihv-Xc-ZFj"/>
+                        <outlet property="multiSwitch2" destination="HrJ-fi-yy9" id="Yfi-M4-zHf"/>
+                        <outlet property="multiSwitch3" destination="nTu-Zk-tfT" id="8bQ-01-P92"/>
+                        <outlet property="multiSwitch4" destination="1K2-cp-Tzm" id="SBJ-Ar-Zqm"/>
                         <outlet property="multipleStackView" destination="sIx-sy-IrR" id="PBQ-Ch-vDQ"/>
                         <outlet property="questionLabel" destination="pTI-Sz-hcg" id="fBL-Fs-LF6"/>
                         <outlet property="questionProgressView" destination="bR1-YN-Z9u" id="Rh7-xF-H8B"/>
                         <outlet property="rangedLabel1" destination="o7n-Tz-dot" id="pRF-JG-Ubx"/>
                         <outlet property="rangedLabel2" destination="hXy-Uz-Yzy" id="MeR-Ye-kzG"/>
+                        <outlet property="rangedSlider" destination="YDU-MO-fQa" id="VwI-uV-c6o"/>
                         <outlet property="rangedStackView" destination="tjV-6Q-3Nq" id="mrt-ws-mwP"/>
                         <outlet property="singleButton1" destination="1ws-kI-mr5" id="2Yo-OA-FQw"/>
                         <outlet property="singleButton2" destination="Jtp-kq-kDa" id="col-8i-CBT"/>

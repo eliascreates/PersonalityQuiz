@@ -21,14 +21,23 @@ class QuestionViewController: UIViewController {
     @IBOutlet var multiLabel3: UILabel!
     @IBOutlet var multiLabel4: UILabel!
     
+    
+    @IBOutlet var multiSwitch1: UISwitch!
+    @IBOutlet var multiSwitch2: UISwitch!
+    @IBOutlet var multiSwitch3: UISwitch!
+    @IBOutlet var multiSwitch4: UISwitch!
+    
+    
     @IBOutlet var rangedStackView: UIStackView!
     @IBOutlet var rangedLabel1: UILabel!
     @IBOutlet var rangedLabel2: UILabel!
+    @IBOutlet var rangedSlider: UISlider!
     
     @IBOutlet var questionLabel: UILabel!
     @IBOutlet var questionProgressView: UIProgressView!
     
     var questionIndex = 0
+    var chosenAnswers = [Answer]()
     var questions: [Question] = [
         Question(
             text: "What food do you like the most?",
@@ -62,8 +71,6 @@ class QuestionViewController: UIViewController {
         )
     ]
 
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -121,5 +128,65 @@ class QuestionViewController: UIViewController {
         rangedLabel2.text = answer.last?.text
     }
 
+    
+    @IBAction func singleAnswerButtonPressed(_ sender: UIButton) {
+        let currentAnswers = questions[questionIndex].answers
+        
+        switch sender {
+        case singleButton1:
+            chosenAnswers.append(currentAnswers[0])
+        case singleButton2:
+            chosenAnswers.append(currentAnswers[1])
+        case singleButton3:
+            chosenAnswers.append(currentAnswers[2])
+        case singleButton4:
+            chosenAnswers.append(currentAnswers[3])
+        default:
+            break
+        }
+        nextQuestion()
+    }
+    
+    
+    @IBAction func multiAnswerButtonPressed() {
+        let currentAnswers = questions[questionIndex].answers
+        
+        if multiSwitch1.isOn {
+            chosenAnswers.append(currentAnswers[0])
+        }
+        if multiSwitch2.isOn {
+            chosenAnswers.append(currentAnswers[1])
+        }
+        if multiSwitch3.isOn {
+            chosenAnswers.append(currentAnswers[2])
+        }
+        if multiSwitch4.isOn {
+            chosenAnswers.append(currentAnswers[3])
+        }
+        
+        nextQuestion()
+    }
+    
+    @IBAction func rangedAnswerButtonPressed() {
+        let currentAnswers = questions[questionIndex].answers
+        
+        let index = Int(round(rangedSlider.value * Float( currentAnswers.count - 1)))
+        
+        print("Slide Value: \(rangedSlider.value) - index: \(index)")
+        
+        chosenAnswers.append(currentAnswers[index])
+    
+        nextQuestion()
+    }
+    
+    
+    func nextQuestion() {
+        
+        
+    }
+    
+    
+    
+    
 
 }
