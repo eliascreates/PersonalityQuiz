@@ -284,7 +284,7 @@
                         <outlet property="singleButton3" destination="Jet-QC-glL" id="tXs-sA-Gx3"/>
                         <outlet property="singleButton4" destination="udl-Qh-faK" id="I1h-iD-Q6G"/>
                         <outlet property="singleStackView" destination="YDr-4c-89b" id="Mqk-eX-7v0"/>
-                        <segue destination="4Kl-Au-LAZ" kind="show" identifier="Results" id="6Ac-1p-JvS"/>
+                        <segue destination="4Kl-Au-LAZ" kind="show" identifier="Results" destinationCreationSelector="showResults:" id="6Ac-1p-JvS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XIw-2W-UqE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -326,10 +326,19 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Results" id="XcB-py-kw0">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="ZeQ-mh-iS9"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="ZeQ-mh-iS9">
+                            <connections>
+                                <segue destination="voH-GJ-qyf" kind="unwind" unwindAction="unwindToIntroductionFor:" id="ZqY-M3-dfQ"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="resultAnswerLabel" destination="rLI-nh-u6q" id="H6P-O8-Nga"/>
+                        <outlet property="resultDefinitionLabel" destination="JQy-t7-elf" id="6J6-Lh-itT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p54-Zi-ufQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="voH-GJ-qyf" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2648" y="15"/>
         </scene>
