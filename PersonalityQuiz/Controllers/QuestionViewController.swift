@@ -72,6 +72,7 @@ class QuestionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        questions.shuffle()
         updateUI()
     }
     
@@ -82,7 +83,12 @@ class QuestionViewController: UIViewController {
         
         navigationItem.title = "Question #\(questionIndex + 1)"
         
-        let currentQuestion = questions[questionIndex]
+        var currentQuestion = questions[questionIndex]
+        
+        if currentQuestion.type != .ranged {
+            currentQuestion.answers.shuffle()
+        }
+        
 
         questionLabel.text = currentQuestion.text
         questionProgressView.setProgress(Float((questionIndex)/questions.count), animated: true)
