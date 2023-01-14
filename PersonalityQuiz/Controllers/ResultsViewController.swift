@@ -11,6 +11,7 @@ class ResultsViewController: UIViewController {
 
     var responses: [Answer]
     
+    
     init?(coder: NSCoder, responses: [Answer]) {
         self.responses = responses
         super.init(coder: coder)
@@ -23,6 +24,25 @@ class ResultsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        calculatePersonalityResults()
+
     }
+    
+    func calculatePersonalityResults() {
+        
+        let frequencyOfAnswers = responses.reduce(into: [:]) { partialResult, answer in
+            
+            partialResult[answer.type, default: 0] += 1
+            
+        }
+
+        
+        
+        
+        
+    }
+    
+    
+    
     
 }
